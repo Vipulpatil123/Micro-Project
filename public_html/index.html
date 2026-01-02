@@ -1,0 +1,149 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Form (JPDB)</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h3 class="text-center">Employee Form using JPDB</h3>
+    <hr>
+
+    <form id="empForm">
+        <div class="form-group">
+            <label>Employee ID</label>
+            <input type="text" id="empid" class="form-control" onchange="getEmp()">
+        </div>
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="empname" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Salary</label>
+            <input type="number" id="salary" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>HRA</label>
+            <input type="number" id="hra" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>DA</label>
+            <input type="number" id="da" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Deduction</label>
+            <input type="number" id="deduct" class="form-control">
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" onclick="newData()">New</button>
+
+            <button type="button" class="btn btn-success" id="save"
+                    onclick="saveData()" disabled>Save</button>
+
+            <button type="button" class="btn btn-warning" id="change"
+                    onclick="changeData()" disabled>Change</button>
+
+            <button type="button" class="btn btn-info"
+                    onclick="getPrevious()">Previous</button>
+
+            <button type="button" class="btn btn-danger"
+                    onclick="resetForm()">Reset</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+<script src="index.js"></script>
+</body>
+</html>-->
+
+
+
+<!--micro project-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Enrollment Form</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- JPDB -->
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h3 class="text-center">Student Enrollment Form</h3>
+    <hr>
+
+    <form id="studentForm">
+        <div class="form-group">
+            <label>Roll No</label>
+            <input type="text" id="rollno" class="form-control"
+                   onchange="getStudent()">
+        </div>
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="fullname" class="form-control" disabled>
+        </div>
+
+        <div class="form-group">
+            <label>Class</label>
+            <input type="text" id="class" class="form-control" disabled>
+        </div>
+
+        <div class="form-group">
+            <label>Birth Date</label>
+            <input type="date" id="dob" class="form-control" disabled>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <input type="text" id="address" class="form-control" disabled>
+        </div>
+
+        <div class="form-group">
+            <label>Enrollment Date</label>
+            <input type="date" id="enrolldate" class="form-control" disabled>
+        </div>
+
+        <div class="text-center">
+            <button type="button" id="save"
+                    class="btn btn-success"
+                    onclick="saveData()" disabled>Save</button>
+
+            <button type="button" id="update"
+                    class="btn btn-warning"
+                    onclick="updateData()" disabled>Update</button>
+
+            <button type="button" id="reset"
+                    class="btn btn-danger"
+                    onclick="resetForm()" disabled>Reset</button>
+        </div>
+    </form>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
